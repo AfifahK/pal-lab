@@ -119,6 +119,9 @@
     .partner-links a:hover { text-decoration: underline; }
     @media (max-width: 768px) { .partner-section { grid-template-columns: 1fr; } }
 
+    .ack-section { border-top: 1px solid var(--border); padding: 2rem 0; }
+    .ack-section p { font-size: 0.875rem; font-weight: 300; color: var(--fg-muted); line-height: 1.7; max-width: 60rem; }
+
     footer { border-top: 1px solid var(--border); padding: 0 3.5rem; }
     .footer-bottom { padding: 1rem 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.6875rem; color: var(--fg-muted); letter-spacing: 0.05em; }
     @media (max-width: 768px) { footer { padding: 0 1.5rem; } }
@@ -138,6 +141,7 @@
       <a href="#projects">Projects</a>
       <a href="#team">Team</a>
       <a href="#partners">Partners</a>
+      <a href="#acknowledgements">Acknowledgements</a>
       <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -148,6 +152,7 @@
     <a href="#projects" onclick="closeMenu()">Projects</a>
     <a href="#team" onclick="closeMenu()">Team</a>
     <a href="#partners" onclick="closeMenu()">Partners</a>
+    <a href="#acknowledgements" onclick="closeMenu()">Acknowledgements</a>
   </div>
 </nav>
 
@@ -361,6 +366,22 @@
         </a>
       </div>
     </div>
+  </div>
+
+  <div class="deco-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 24" preserveAspectRatio="none" fill="none">
+      <path d="M0 12 Q50 4 100 12 T200 12 T300 12 T400 12 T500 12 T600 12 T700 12 T800 12 T900 12 T1000 12 T1100 12 T1200 12" stroke="var(--blue)" stroke-width="0.5" opacity="0.12"/>
+      <path d="M0 12 Q50 20 100 12 T200 12 T300 12 T400 12 T500 12 T600 12 T700 12 T800 12 T900 12 T1000 12 T1100 12 T1200 12" stroke="var(--blue)" stroke-width="0.5" opacity="0.08"/>
+    </svg>
+  </div>
+
+  <div class="cell" id="acknowledgements">
+    <div class="section-num">05</div>
+    <div class="section-title">Acknowledgements</div>
+  </div>
+
+  <div class="ack-section">
+    <p>This project has received the generous support of the University of Connecticut Humanities Institute, the School of Fine Arts Research Grant, and the Office of the Vice President for Research in helping to make this project possible.</p>
   </div>
 
 </div>
